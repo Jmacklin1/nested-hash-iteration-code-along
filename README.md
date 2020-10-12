@@ -43,13 +43,12 @@ favorite ice cream flavors.
 There are at least two ways you can accomplish this, and for this codealong,
 we'll work with the second way.
 
-  1. You can directly iterate over the hash that is the value of the `"Freddy
-Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.
+1. You can directly iterate over the hash that is the value of the `"Freddy Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.
 
-  2. You can set a conditional to iterate through the hash for `Freddy Mercury` only and when you reach the appropriate level,
-check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If
-it does, check to see if that array contains `"strawberry"`. If it does, then
-delete it from the `Array`.
+2. You can set a conditional to iterate through the hash for `Freddy Mercury` only and when you reach the appropriate level,
+   check to see if the key `==` ("is equal to") `:favorite_ice_cream_flavors`. If
+   it does, check to see if that array contains `"strawberry"`. If it does, then
+   delete it from the `Array`.
 
 #### Step 1: Iterate over the first level
 
@@ -57,7 +56,7 @@ Inside the `remove_strawberry` method, let's take our first dive into the
 contacts `Hash`. Then we'll use `binding.pry` to see where we are.
 
 We are going to first iterate over the top level of the `Hash` where the keys
-should be the person and the values should be a `Hash`  of details about the
+should be the person and the values should be a `Hash` of details about the
 person.
 
 **Note on variable naming:** This process will be remarkably easier if you name
@@ -164,8 +163,7 @@ def remove_strawberry(contacts)
 end
 ```
 
-Congrats! You made it. Test that your method works by running `ruby
-bin/contacts` in the terminal. It should output the hash without strawberry ice
+Congrats! You made it. Test that your method works by running `ruby bin/contacts` in the terminal. It should output the hash without strawberry ice
 cream. Also, be sure to run the specs to make sure they pass.
 
 [rubydocs]: https://docs.ruby-lang.org/en/2.0.0/Hash.html#method-i-delete_if
